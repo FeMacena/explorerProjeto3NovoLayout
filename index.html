@@ -1,0 +1,93 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <title>Formulário Mentoria</title>
+  </head>
+  <body>
+    <header>
+      <h1>Mentoria</h1>
+
+      <p>Preencha o formulário abaixo para</br>
+      agendar a sua mentoria</p>
+    </header>
+
+    <div class="form-box">
+      <form id="form-mentoria">
+        <h2>Informações Pessoais</h2>
+        <div class="container">
+          <div class="input-wrapper">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" required>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" required>
+          </div>
+        </div>
+
+        </br>
+
+        <label for="email">E-mail <span> (digite um e-mail válido)</span></label>
+        <input type="email" name="email" required>
+
+        </br>
+
+        <label for="senha">Senha <span> (mínimo de 6 caracteres)</span></label>
+        <input type="password" name="senha" required minlength="6">   
+
+        <h2>Informações do mentor</h2>
+        <label for="nome-mentor">Nome do seu mentor <span> (só o primeiro nome)</span></label>
+        <input type="text" name="nome-mentor" required>
+
+        <h3>PRIMEIRA MENTORIA</h3>
+        <div class="colunas-data">
+          <div class="input-data">
+            <label for="event-data"> Data <span> (DD/MM/AAAA)</span> </label>
+            <input type="date" id="event-data" required/>
+          </div>
+
+          <div class="input-data">
+            <label for="event-begin"> Das </label>
+            <input type="time" id="event-begin" required/>
+          </div>
+
+          <div class="input-data">
+            <label for="event-end"> Até </label>
+            <input type="time" id="event-end" required/>
+          </div>
+        </div>
+
+        <h3>SEGUNDA MENTORIA</h3>
+        <div class="colunas-data">
+          <div class="input-data">
+            <label for="event-data"> Data <span> (DD/MM/AAAA)</span> </label>
+            <input type="date" id="event-data" required/>
+          </div>
+
+          <div class="input-data">
+            <label for="event-begin"> Das </label>
+            <input type="time" id="event-begin" required/>
+          </div>
+
+          <div class="input-data">
+            <label for="event-end"> Até </label>
+            <input type="time" id="event-end" required/>
+          </div>
+        </div>
+      </form>
+
+      <div class="footer-container">
+        <footer>
+          <button name="save" type="submit" form="form-mentoria">Salvar</button>
+        </footer>
+      </div>
+    </div>
+  </body>
+  </html>

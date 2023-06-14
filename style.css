@@ -1,0 +1,176 @@
+:root {
+  font-size: 62.5%;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 436px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #E5E5E5;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #535971;
+  width: 75rem;
+  margin: auto;
+}
+
+body h1 {
+  font-size: 4.8rem;
+}
+
+body h2 {
+  font-size: 2.4rem;
+  color: #E5E5E5;
+}
+
+body h3 {
+  font-size: 2rem;
+  color: #E5E5E5;
+}
+
+body h1, h2, h3 {
+  font-family: 'Staatliches', cursive;
+}
+
+body header {
+  color: #535971;
+}
+
+header {
+  margin-top: 14rem;
+}
+
+header p {
+  font-size: 2.0rem;
+}
+
+#form-mentoria {
+  color: #c7c7c7;
+  font-size: 1.4rem;
+  margin-top: 5.8rem;
+
+  border: none;
+  background: #363a49;
+  min-height: 300px;
+
+  border-radius: 8px 8px 0 0;
+  padding: 6.4rem;
+  display: flex;
+
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-mentoria span {
+  color:#969696;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 2.2rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  width: 30rem;
+}
+
+.input-wrapper label {
+  margin-bottom: 5px;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+
+  line-height: 24px;
+  color: #4e4958;
+  margin-bottom: 8px;
+
+  background: #dbdbdb;
+  border-radius: 8px;
+  height: 56px;
+
+  padding: 0 24px;
+  font-size: 16px;
+  color: #6c6a71;
+
+  border: 1px solid #e6e6f0;
+}
+
+input:invalid {
+  border: none;
+  outline: 2px solid red;
+  border-radius: 5px;
+}
+
+.colunas-data {
+  display: flex;
+  gap: 2rem;
+}
+
+.colunas-data > div:nth-child(1) {
+  width: 30rem;
+}
+
+fieldset {
+  border: none;
+}
+
+#event-data {
+  width: 20rem;
+}
+
+#event-begin {
+  width: 10rem;
+}
+
+#event-end {
+  width: 10rem;
+}
+
+.footer-container {
+  font-size: 1.4rem;
+  border: none;
+  background: #E5E5E5;
+
+  height: 16rem;
+  width: 75rem;
+  border-radius: 0 0 0.8rem 0.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+footer {
+  margin: auto;
+}
+
+footer button{
+  color: #fff;
+  background: #FF5374;
+  width: 60.8rem;
+
+  height: 5.5rem;
+  border-radius: 2.0rem;
+  border: none;
+
+  font-family: 'Staatliches', cursive;
+  font-size: 2rem;
+}
+
+footer button:hover {
+  background: #a03349;
+  cursor: pointer;
+}
